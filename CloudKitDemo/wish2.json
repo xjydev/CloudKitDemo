@@ -1,0 +1,152 @@
+{
+    "card_type": 199,
+    "itemid": "667",
+    "itemid2": "seqid:1460710723|type:1|t:4|pos:1-0-0|q:王心凌镜头|ext:&cate=568&card_type=199&roomid=9831&title=乘风破浪热聊中&button=card&qri=35184472752129&qtime=1653637566&",
+    "barrage_speed": 40,
+    "flow_comment_row": 2,
+    "scheme": "sinaweibo:\/\/wbox?id=j84w2uenjc&roomid=9831&q=%E7%8E%8B%E5%BF%83%E5%87%8C%E9%95%9C%E5%A4%B4&extparam=lcate%3D568%26c_type%3D278",
+    "actionlog": {
+        "act_code": 554,
+        "ext": "seqid:1460710723|type:1|t:4|pos:1-0-0|q:王心凌镜头|ext:&cate=568&card_type=199&roomid=9831&title=乘风破浪热聊中&button=card&qri=35184472752129&qtime=1653637566&",
+        "luicode": "10000011",
+        "uicode": "10000003",
+        "fid": "100103type=1&q=王心凌镜头&t=4",
+        "lfid": "106003type=25&t=3&disable_hot=1&filter_type=fun"
+    },
+    "bgtop_img": "http://n.sinaimg.cn/photo/2dd2d040/20220609/wish_icon_bg.png",
+    "component": {
+        "type": 1,
+        "left_top_img": {
+            "url": "http://n.sinaimg.cn/photo/2dd2d040/20220609/wish_icon_pingzi.png",
+            "width": 60,
+            "height": 52
+        },
+        "left_bottom_img": {
+            "url": "http://n.sinaimg.cn/photo/2dd2d040/20220609/wish_icon_title.png",
+            "width": 60,
+            "height": 17
+        },
+        "desc1": [{
+            "type": "text",
+            "style": {
+                "textColor": "#333333",
+                "textSize": 16
+            },
+            "content": "#王俊凯生日快乐#"
+        }],
+        "desc2": [{
+            "type": "text",
+            "style": {
+                "textColor": "#939393",
+                "textColorKey": "CommonGray93",
+                "textSize": 13
+            },
+            "content": "5.19前来超话许下心愿，收获惊喜"
+        }],
+        "desc3": [{
+            "type": "text",
+            "style": {
+                "textColor": "#DA80C6",
+                "textSize": 13
+            },
+            "content": "目标1.5W | 已许下1.2W个愿望"
+        }],
+        "right_button": {
+            "text": "去许愿",
+            "text_color": "#FFFFFF",
+            "text_color_dark": "",
+            "bg_color": "#FF7DA5",
+            "bg_color_dark": "",
+            "scheme2": "sinaweibo:\/\/cardlist?containerid=231140f2264b047317c61720d012d222adca2b_-_profile_inpage",
+            "common_button": {
+                "type": "default",
+                "name": "",
+                "show_loading": 0,
+                "skip_format": 0,
+                "params": {
+                    "action": "\/2\/page\/button?request_url=http%3A%2F%2Fi.huati.weibo.com%2Fmobile%2Fsuper%2Factive_publish%3Fbusiness%3Dinterest_keep%26display_name%3D%25E8%25B1%2586%25E5%2593%2588%25E5%2593%2588%25E5%25B7%25B4%26is_off%3D0%26page_id%3D100808165b83a0f9e17c70778c847ada6ae123"
+                },
+                "actionlog": {
+                    "act_code": 6355,
+                    "cardid": "page_card_100808165b83a0f9e17c70778c847ada6ae123"
+                }
+            }
+        }
+        "target_title_img":"https://n.sinaimg.cn/weibo/6fc14c6d/20221013/icon_jindu.png",
+        "target_bg_img":"https://n.sinaimg.cn/weibo/6fc14c6d/20221013/jindu_bg.png",
+        "targets":[{
+            "track_color":"#14E9E9E9",
+            "title":"100花絮",
+            "dot_img":"https://n.sinaimg.cn/weibo/6fc14c6d/20221013/jindu_dot_grey.png",
+            "progress_color":["#8883D9","#949EEE"],
+            "progress":1.0
+            
+        },{
+            "track_color":"#14E9E9E9",
+            "title":"100花絮",
+            "dot_img":"https://n.sinaimg.cn/weibo/6fc14c6d/20221013/jindu_dot_grey.png",
+            "progress_color":["#8883D9","#949EEE"],
+            "progress":0.5
+                
+        },{
+            "track_color":"#14E9E9E9",
+            "title":"100花絮",
+            "dot_img":"https://n.sinaimg.cn/weibo/6fc14c6d/20221013/jindu_dot_grey.png",
+            "progress_color":["#8883D9","#949EEE"],
+            "progress":0.0
+                
+        }],
+    },
+    "flow_comments": [{
+        "bgcolor": "#B3FFFFFF",
+        "bgcolor_dark": "#B3181818",
+        "user": {
+            "verified": true,
+            "verified_type": 0,
+            "avatar_large": "http:\/\/tvax2.sinaimg.cn\/crop.0.0.1072.1072.180\/006dScXily8h2hh6mh0z5j30ts0ts770.jpg?KID=imgbed,tva&Expires=1653648205&ssig=%2FOJtUpfapR",
+            "verified_type_ext": 1
+        },
+        "text": "这是一条普通的帖子，这是一条普通的帖子",
+        "scheme": "sinaweibo:\/\/wbox?id=j84w2uenjc&roomid=9831&q=%E7%8E%8B%E5%BF%83%E5%87%8C%E9%95%9C%E5%A4%B4&extparam=lcate%3D568%26c_type%3D278",
+        "actionlog": {
+            "act_code": 554,
+            "ext": "seqid:1460710723|type:1|t:4|pos:1-0-0|q:王心凌镜头|ext:&cate=568&card_type=199&roomid=9831&title=乘风破浪热聊中&button=barrage&qri=35184472752129&qtime=1653637566&",
+            "luicode": "10000011",
+            "uicode": "10000003",
+            "fid": "100103type=1&q=王心凌镜头&t=4",
+            "lfid": "106003type=25&t=3&disable_hot=1&filter_type=fun"
+        },
+        "cleaned": true
+    }, {
+        "gradient_border_color": ["#A7C4FF", "#FFA3E9"],
+        "gradient_border_color_dark": ["#626592", "#805784"],
+        "gradient_bg_color": ["#36A7C4FF", "#36FFA3E9"],
+        "gradient_bg_color_dark": ["#16A7C4FF", "#16FFA3E9"],
+        "right_label": {
+            "url": "http://n.sinaimg.cn/photo/2dd2d040/20220609/wish_icon_fanpai.png",
+            "width": 28,
+            "height": 14
+        },
+        "user": {
+            "verified": true,
+            "verified_type": 0,
+            "avatar_large": "http:\/\/tvax2.sinaimg.cn\/crop.0.0.996.996.180\/006jeurply8gpsl4o398vj30ro0rota5.jpg?KID=imgbed,tva&Expires=1653648205&ssig=LoU97nP%2Bra",
+            "verified_type_ext": 0
+        },
+        "text": "这是一条高亮的帖子",
+        "scheme": "sinaweibo:\/\/wbox?id=j84w2uenjc&roomid=9831&q=%E7%8E%8B%E5%BF%83%E5%87%8C%E9%95%9C%E5%A4%B4&extparam=lcate%3D568%26c_type%3D278",
+        "actionlog": {
+            "act_code": 554,
+            "ext": "seqid:1460710723|type:1|t:4|pos:1-0-0|q:王心凌镜头|ext:&cate=568&card_type=199&roomid=9831&title=乘风破浪热聊中&button=barrage&qri=35184472752129&qtime=1653637566&",
+            "luicode": "10000011",
+            "uicode": "10000003",
+            "fid": "100103type=1&q=王心凌镜头&t=4",
+            "lfid": "106003type=25&t=3&disable_hot=1&filter_type=fun"
+        },
+        "cleaned": true
+    }],
+    "analysis_extra": "seqid:1460710723|type:1|t:4|pos:1-0-0|q:王心凌镜头|ext:&cate=568&card_type=199&roomid=9831&title=乘风破浪热聊中&button=card&qri=35184472752129&qtime=1653637566&",
+    "openurl": "",
+    "cleaned": true
+}
+```
