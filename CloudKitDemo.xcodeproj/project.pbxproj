@@ -12,14 +12,12 @@
 		6C9A520E291106F100B6541D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A520D291106F100B6541D /* SceneDelegate.m */; };
 		6C9A5211291106F100B6541D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A5210291106F100B6541D /* ViewController.m */; };
 		6C9A5214291106F100B6541D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9A5212291106F100B6541D /* Main.storyboard */; };
-		6C9A5217291106F100B6541D /* CloudKitDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A5215291106F100B6541D /* CloudKitDemo.xcdatamodeld */; };
 		6C9A5219291106F300B6541D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9A5218291106F300B6541D /* Assets.xcassets */; };
 		6C9A521C291106F300B6541D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9A521A291106F300B6541D /* LaunchScreen.storyboard */; };
 		6C9A521F291106F300B6541D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A521E291106F300B6541D /* main.m */; };
 		6C9A5229291106F400B6541D /* CloudKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A5228291106F400B6541D /* CloudKitDemoTests.m */; };
 		6C9A5233291106F400B6541D /* CloudKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A5232291106F400B6541D /* CloudKitDemoUITests.m */; };
 		6C9A5235291106F400B6541D /* CloudKitDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A5234291106F400B6541D /* CloudKitDemoUITestsLaunchTests.m */; };
-		6C9A52432911074B00B6541D /* DemoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A52412911074B00B6541D /* DemoModel.xcdatamodeld */; };
 		6CD905ED292DB4300052EDAC /* DemoDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD905EC292DB4300052EDAC /* DemoDocument.m */; };
 		6CD905EF292DB7EF0052EDAC /* wish2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CD905EE292DB7EF0052EDAC /* wish2.json */; };
 		6CF2319229279E1200D21DA8 /* KeyValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2319129279E1200D21DA8 /* KeyValueViewController.m */; };
@@ -55,7 +53,6 @@
 		6C9A520F291106F100B6541D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6C9A5210291106F100B6541D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6C9A5213291106F100B6541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C9A5216291106F100B6541D /* CloudKitDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudKitDemo.xcdatamodel; sourceTree = "<group>"; };
 		6C9A5218291106F300B6541D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9A521B291106F300B6541D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C9A521D291106F300B6541D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		6C9A522E291106F400B6541D /* CloudKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9A5232291106F400B6541D /* CloudKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudKitDemoUITests.m; sourceTree = "<group>"; };
 		6C9A5234291106F400B6541D /* CloudKitDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudKitDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		6C9A52422911074B00B6541D /* DemoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoModel.xcdatamodel; sourceTree = "<group>"; };
 		6C9A52442911090300B6541D /* CloudKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitDemo.entitlements; sourceTree = "<group>"; };
 		6CD905EB292DB4300052EDAC /* DemoDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoDocument.h; sourceTree = "<group>"; };
 		6CD905EC292DB4300052EDAC /* DemoDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoDocument.m; sourceTree = "<group>"; };
@@ -103,6 +99,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C3A525C293B3CDE00B27F1C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		6C9A51FD291106F100B6541D = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +129,7 @@
 		6C9A5208291106F100B6541D /* CloudKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C3A525C293B3CDE00B27F1C /* model */,
 				6C9A52442911090300B6541D /* CloudKitDemo.entitlements */,
 				6C9A5209291106F100B6541D /* AppDelegate.h */,
 				6C9A520A291106F100B6541D /* AppDelegate.m */,
@@ -149,8 +153,6 @@
 				6C9A521A291106F300B6541D /* LaunchScreen.storyboard */,
 				6C9A521D291106F300B6541D /* Info.plist */,
 				6C9A521E291106F300B6541D /* main.m */,
-				6C9A52412911074B00B6541D /* DemoModel.xcdatamodeld */,
-				6C9A5215291106F100B6541D /* CloudKitDemo.xcdatamodeld */,
 			);
 			path = CloudKitDemo;
 			sourceTree = "<group>";
@@ -304,14 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CF2319229279E1200D21DA8 /* KeyValueViewController.m in Sources */,
-				6C9A52432911074B00B6541D /* DemoModel.xcdatamodeld in Sources */,
 				6CD905ED292DB4300052EDAC /* DemoDocument.m in Sources */,
 				6C9A521F291106F300B6541D /* main.m in Sources */,
 				6CF2319829279E2D00D21DA8 /* CloudKitViewController.m in Sources */,
 				6C9940F1291A547400DC4B1A /* MainTableViewController.m in Sources */,
 				6CF2319529279E2100D21DA8 /* DocumentViewController.m in Sources */,
 				6C9A5211291106F100B6541D /* ViewController.m in Sources */,
-				6C9A5217291106F100B6541D /* CloudKitDemo.xcdatamodeld in Sources */,
 				6C9A520B291106F100B6541D /* AppDelegate.m in Sources */,
 				6C9A520E291106F100B6541D /* SceneDelegate.m in Sources */,
 			);
@@ -645,29 +645,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6C9A5215291106F100B6541D /* CloudKitDemo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6C9A5216291106F100B6541D /* CloudKitDemo.xcdatamodel */,
-			);
-			currentVersion = 6C9A5216291106F100B6541D /* CloudKitDemo.xcdatamodel */;
-			path = CloudKitDemo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		6C9A52412911074B00B6541D /* DemoModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6C9A52422911074B00B6541D /* DemoModel.xcdatamodel */,
-			);
-			currentVersion = 6C9A52422911074B00B6541D /* DemoModel.xcdatamodel */;
-			path = DemoModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6C9A51FE291106F100B6541D /* Project object */;
 }

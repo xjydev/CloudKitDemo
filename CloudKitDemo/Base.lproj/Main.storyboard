@@ -233,8 +233,73 @@
                     <view key="view" contentMode="scaleToFill" id="tlY-JA-dpE">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN1-vW-eS4">
+                                <rect key="frame" x="100" y="121" width="190" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gyD-j8-6qQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="公共写入"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgA-AH-Z3V">
+                                <rect key="frame" x="100" y="176" width="190" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="oli-4O-anR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="公共读取"/>
+                                <state key="highlighted" title="点击"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJY-na-pUU">
+                                <rect key="frame" x="100" y="231" width="190" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="y80-FS-xKL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="私人写入"/>
+                                <state key="highlighted" title="点击"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0a-7G-JI5">
+                                <rect key="frame" x="100" y="286" width="190" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WjH-AF-qYJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="私人读取"/>
+                                <state key="highlighted" title="点击"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlJ-yz-wIZ">
+                                <rect key="frame" x="20" y="341" width="350" height="369"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h7u-4j-3vK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="trailing" secondItem="TlJ-yz-wIZ" secondAttribute="trailing" constant="20" id="1Bg-fQ-uek"/>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="bottom" secondItem="TlJ-yz-wIZ" secondAttribute="bottom" constant="100" id="A9V-6i-wXy"/>
+                            <constraint firstItem="TlJ-yz-wIZ" firstAttribute="top" secondItem="z0a-7G-JI5" secondAttribute="bottom" constant="20" id="B9T-0V-BsK"/>
+                            <constraint firstItem="ZgA-AH-Z3V" firstAttribute="top" secondItem="qN1-vW-eS4" secondAttribute="bottom" constant="20" id="Cza-jm-9N2"/>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="trailing" secondItem="qN1-vW-eS4" secondAttribute="trailing" constant="100" id="HmS-NA-Gbc"/>
+                            <constraint firstItem="TlJ-yz-wIZ" firstAttribute="leading" secondItem="h7u-4j-3vK" secondAttribute="leading" constant="20" id="Jty-sc-9AC"/>
+                            <constraint firstItem="z0a-7G-JI5" firstAttribute="leading" secondItem="h7u-4j-3vK" secondAttribute="leading" constant="100" id="L4J-1Q-cri"/>
+                            <constraint firstItem="RJY-na-pUU" firstAttribute="leading" secondItem="h7u-4j-3vK" secondAttribute="leading" constant="100" id="Nma-Ha-s0h"/>
+                            <constraint firstItem="qN1-vW-eS4" firstAttribute="leading" secondItem="h7u-4j-3vK" secondAttribute="leading" constant="100" id="VEM-QV-NUg"/>
+                            <constraint firstItem="z0a-7G-JI5" firstAttribute="top" secondItem="RJY-na-pUU" secondAttribute="bottom" constant="20" id="Zgr-VY-cjd"/>
+                            <constraint firstItem="ZgA-AH-Z3V" firstAttribute="leading" secondItem="h7u-4j-3vK" secondAttribute="leading" constant="100" id="ZqK-wH-8QR"/>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="trailing" secondItem="ZgA-AH-Z3V" secondAttribute="trailing" constant="100" id="abh-lN-91c"/>
+                            <constraint firstItem="RJY-na-pUU" firstAttribute="top" secondItem="ZgA-AH-Z3V" secondAttribute="bottom" constant="20" id="dUx-vM-G6t"/>
+                            <constraint firstItem="qN1-vW-eS4" firstAttribute="top" secondItem="h7u-4j-3vK" secondAttribute="top" constant="30" id="l8L-am-2Li"/>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="trailing" secondItem="z0a-7G-JI5" secondAttribute="trailing" constant="100" id="pTh-pc-rkQ"/>
+                            <constraint firstItem="h7u-4j-3vK" firstAttribute="trailing" secondItem="RJY-na-pUU" secondAttribute="trailing" constant="100" id="vjz-Xo-wKB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sAx-oV-hx7"/>
                 </viewController>

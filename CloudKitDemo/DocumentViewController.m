@@ -18,9 +18,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataQuery = [[NSMetadataQuery alloc]init];
     //获取最新数据完成
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedGetNewDocument:) name:NSMetadataQueryDidFinishGatheringNotification object:self.dataQuery];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getAllDocument:) name:NSMetadataQueryDidFinishGatheringNotification object:self.dataQuery];
     //数据更新通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(documentDidChange:) name:NSMetadataQueryDidUpdateNotification object:self.dataQuery];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateDocument:) name:NSMetadataQueryDidUpdateNotification object:self.dataQuery];
 }
 - (NSURL *)getUbiquityContainerURLWithName:(NSString *)name {
     NSURL *ubiquityURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:@"iCloud.co.xiaodev.icloud"];
@@ -57,7 +57,17 @@
     [self.dataQuery setSearchScopes:@[NSMetadataQueryUbiquitousDocumentsScope]];
     [self.dataQuery startQuery];
 }
-- (void)finishedGetNewDocument:(NSMetadataQuery *)metadataQuery {
+- (void)getAllDocument:(NSMetadataQuery *)metadataQuery {
+    [self.dataQuery.results enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if([obj isKindOfClass:[NSMetadataItem class]]) {
+            NSMetadataItem *item = obj;
+            NSString *fileName = [item valueForAttribute:NSMetadataItemFSNameKey];
+            NSLog(@"fileName ======= %@",fileName);
+        }
+    }];
+}
+- (void)updateDocument:(NSMetadataQuery *)query {
+    NSLog(@"数据更新");
 }
 /*
 #pragma mark - Navigation
