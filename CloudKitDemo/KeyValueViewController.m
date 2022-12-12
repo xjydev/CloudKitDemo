@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyValuesDidChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:[NSUbiquitousKeyValueStore defaultStore]];
+
 }
 - (IBAction)saveButtonAction:(UIButton *)sender {
     if (self.keyTextField.text.length == 0 || self.valueTextField.text.length == 0) {
@@ -43,7 +46,9 @@
         self.contentTextView.text = @"未查询到结果";
     }
 }
-
+- (void)keyValuesDidChange:(NSUbiquitousKeyValueStore *)store {
+    NSLog(@"keyvalue ==== %@",store);
+}
 /*
 #pragma mark - Navigation
 

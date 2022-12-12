@@ -242,6 +242,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="公共写入"/>
+                                <connections>
+                                    <action selector="publicWriteAction:" destination="Y9n-aN-OkH" eventType="touchUpInside" id="Zb2-ZT-MxH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgA-AH-Z3V">
                                 <rect key="frame" x="100" y="176" width="190" height="35"/>
@@ -252,6 +255,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="公共读取"/>
                                 <state key="highlighted" title="点击"/>
+                                <connections>
+                                    <action selector="publicReadAction:" destination="Y9n-aN-OkH" eventType="touchUpInside" id="SbS-qz-FIL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJY-na-pUU">
                                 <rect key="frame" x="100" y="231" width="190" height="35"/>
@@ -262,6 +268,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="私人写入"/>
                                 <state key="highlighted" title="点击"/>
+                                <connections>
+                                    <action selector="privateWriteAction:" destination="Y9n-aN-OkH" eventType="touchUpInside" id="t30-IR-ncJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0a-7G-JI5">
                                 <rect key="frame" x="100" y="286" width="190" height="35"/>
@@ -272,6 +281,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="私人读取"/>
                                 <state key="highlighted" title="点击"/>
+                                <connections>
+                                    <action selector="privateReadAction:" destination="Y9n-aN-OkH" eventType="touchUpInside" id="TD5-8M-U9L"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlJ-yz-wIZ">
                                 <rect key="frame" x="20" y="341" width="350" height="369"/>

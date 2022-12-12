@@ -23,7 +23,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateDocument:) name:NSMetadataQueryDidUpdateNotification object:self.dataQuery];
 }
 - (NSURL *)getUbiquityContainerURLWithName:(NSString *)name {
-    NSURL *ubiquityURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:@"iCloud.co.xiaodev.icloud"];
+    NSURL *ubiquityURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:@"iCloud.com.xiaodev.CloudKitDemo"];
     if(!ubiquityURL)
     {
         NSLog(@"尚未开启iCloud功能");
@@ -35,8 +35,9 @@
 - (IBAction)saveButtonAction:(id)sender {
     NSURL *fileURL = [self getUbiquityContainerURLWithName:@"wish"];
     DemoDocument *doc = [[DemoDocument alloc]initWithFileURL:fileURL];
-    NSURL *localFile = [[NSBundle mainBundle]pathForResource:@"wish2" ofType:@"json"];
-    doc.data = [[NSData data]initWithContentsOfURL:localFile];
+    NSString *localFile = [[NSBundle mainBundle]pathForResource:@"wish2" ofType:@"json"];
+    NSURL *localURL = [NSURL fileURLWithPath:localFile];
+    doc.data = [[NSData data]initWithContentsOfURL:localURL];
     [doc saveToURL:fileURL forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
         if(success){
             NSLog(@"创建文档成功");
@@ -54,11 +55,12 @@
     }];
 }
 - (IBAction)allReadButtonAction:(id)sender {
-    [self.dataQuery setSearchScopes:@[NSMetadataQueryUbiquitousDocumentsScope]];
+    [self.dataQuery setSearchScopes:@[NSMetadataQueryUbiquitousDataScope]];
     [self.dataQuery startQuery];
 }
-- (void)getAllDocument:(NSMetadataQuery *)metadataQuery {
-    [self.dataQuery.results enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+- (void)getAllDocument:(NSNotification *)notification {
+    NSMetadataQuery *metadataQuery = notification.object;
+    [metadataQuery.results enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if([obj isKindOfClass:[NSMetadataItem class]]) {
             NSMetadataItem *item = obj;
             NSString *fileName = [item valueForAttribute:NSMetadataItemFSNameKey];

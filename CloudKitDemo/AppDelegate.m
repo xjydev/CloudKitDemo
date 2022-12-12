@@ -46,6 +46,7 @@
     @synchronized (self) {
         if (_persistentContainer == nil) {
             _persistentContainer = [[NSPersistentCloudKitContainer alloc] initWithName:@"CloudKitDemo"];
+            _persistentContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy;
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
