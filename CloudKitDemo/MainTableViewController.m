@@ -18,6 +18,27 @@
     self.array = @[@{@"title":@"key-value",@"target":@"KeyValueViewController"},
                    @{@"title":@"Document",@"target":@"DocumentViewController"},
                    @{@"title":@"Cloudkit",@"target":@"CloudKitViewController"},];
+    
+    
+    
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    headerView.backgroundColor = [UIColor redColor];
+    self.tableView.tableHeaderView = headerView;
+    
+    
+    UIView *cView = [[UIView alloc]initWithFrame:CGRectMake(50, 50, 54, 14)];
+    cView.backgroundColor = [UIColor greenColor];
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform.c = -0.2;
+    transform.b = 0;
+    CALayer *layer = [CALayer layer];
+    layer.frame = CGRectMake(3, 0, cView.frame.size.width - 6, cView.frame.size.height);
+    layer.cornerRadius = 3;
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    layer.affineTransform = transform;
+    cView.layer.mask = layer;
+    [headerView addSubview:cView];
+    
 }
 
 #pragma mark - Table view data source
